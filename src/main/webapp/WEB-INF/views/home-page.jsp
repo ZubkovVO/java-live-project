@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Student Home Page</title>
 </head>
 <body>
 Hey you are looking at a real web page right now
