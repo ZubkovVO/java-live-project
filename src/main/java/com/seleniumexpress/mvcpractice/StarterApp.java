@@ -14,9 +14,4 @@ public class StarterApp {
 		springApplication.run(args);
 	}
 	
-	@Bean
-	InternalResourceViewResolver viewResolver() {
-		
-		return new InternalResourceViewResolver("/WEB-INF/views/", ".jsp");
-	}
 }
