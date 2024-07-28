@@ -9,5 +9,6 @@
 <body>
 Hey you are looking at a real web page right now
 <!-- Model attribute : students -->
+${students}
 </body>
 </html>
