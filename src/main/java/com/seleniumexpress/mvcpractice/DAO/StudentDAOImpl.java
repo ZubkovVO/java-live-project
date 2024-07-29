@@ -21,7 +21,7 @@ public class StudentDAOImpl implements StudentDAO {
 		String sql = "SELECT * FROM students";
 
 		List<Student> theListOfStudent = jdbcTemplate.query(sql, new StudentRowMapper());
-		
+
 		return theListOfStudent;
 	}
 
