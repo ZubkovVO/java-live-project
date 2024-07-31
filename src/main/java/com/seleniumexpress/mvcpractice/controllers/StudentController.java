@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import com.seleniumexpress.mvcpractice.DAO.StudentDAO;
 import com.seleniumexpress.mvcpractice.api.Student;
+import com.seleniumexpress.mvcpractice.api.StudentDTO;
 
 @Controller
 public class StudentController {
@@ -26,6 +27,17 @@ public class StudentController {
 		model.addAttribute("students", studentList);
 
 		return "home-page";
+	}
+	
+	@GetMapping("/addStudent")
+	public String showAddStudentPage(Model model) {
+		
+		StudentDTO studentDTO = new StudentDTO();
+		
+		model.addAttribute("student", studentDTO);
+		
+		return "add-student";
+		
 	}
 
 }

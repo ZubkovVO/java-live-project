@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h1 align="center">For the Emperor!</h1>
-	<div>
+	<div align="center">
 		<table border="1">
 			<thead>
 				<tr>
