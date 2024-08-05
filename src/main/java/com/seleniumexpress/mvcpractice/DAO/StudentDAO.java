@@ -7,5 +7,7 @@ import com.seleniumexpress.mvcpractice.api.Student;
 public interface StudentDAO {
 
 	List<Student> loadStudents();
+	
+	void saveStudent(Student student);
 
 }

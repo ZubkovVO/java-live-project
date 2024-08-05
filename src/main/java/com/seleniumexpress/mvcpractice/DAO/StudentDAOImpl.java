@@ -25,4 +25,18 @@ public class StudentDAOImpl implements StudentDAO {
 		return theListOfStudent;
 	}
 
+	@Override
+	public void saveStudent(Student student) {
+		// write the logic to store the student object into the database
+
+		Object[] sqlParams = { student.getName(), student.getMobile(), student.getCountry() };
+
+		String sql = "INSERT INTO students(name, mobile, country) values (?,?,?) ";
+
+		jdbcTemplate.update(sql, sqlParams);
+
+		System.out.println("1 record updated...");
+
+	}
+
 }
